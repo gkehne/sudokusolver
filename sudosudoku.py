@@ -211,6 +211,7 @@ def SOLVESU(s):
     return cur
 
 
+# This is the main method.
 # This creates a corresponding .txt file with the solved sudokus in it
 def solve(sudokufilename):
     sus = readSus(sudokufilename)
@@ -240,3 +241,9 @@ def answerQuestion(sudokufilename):
         count = count + 100 * x[0][0] + 10 * x[0][1] + x[0][2]
     print("Number of sodukus solved: " + str(solvedcount) + "/50")
     print("Sum of 3-digit numbers from the upper left boxes: " + str(count))
+
+
+# Default behavior: solve the "sudoku.txt" file of sudokus.
+if __name__ == '__main__':
+    solve("sudoku.txt")
+
