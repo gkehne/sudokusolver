@@ -1,2 +1,3 @@
 #compiled program files
 *.pyc
+venv
